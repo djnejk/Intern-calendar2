@@ -1,5 +1,6 @@
 <?php
-$apiKey = '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'; // Nahraďte svým API klíčem ze Sendinblue
+require($_SERVER['DOCUMENT_ROOT'] . '/secret.php');
+$apiKey = $sendinblue; // Nahraďte svým API klíčem ze Sendinblue
 $senderEmail = 'djnejk@djdevs.eu';
 $senderName = 'Your Name';
 $recipientEmail = 'djnejk@djdevs.eu';

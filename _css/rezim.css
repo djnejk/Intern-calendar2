@@ -1,0 +1,83 @@
+.fgztD_switch {
+  position: fixed;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  right: 13px;
+  bottom: 18px;
+  z-index: 990;
+}
+
+.fgztD_admin_switch {
+  position: fixed;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  right: 80px;
+  bottom: 18px;
+  z-index: 990;
+}
+
+/* Hide default HTML checkbox */
+.fgztD_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The fgztD_fgztD_slider */
+.fgztD_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.fgztD_slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 0 0px 15px #2020203d;
+  background: white url('https://i.ibb.co/FxzBYR9/night.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .fgztD_slider {
+  background-color: #2196f3;
+}
+
+input:focus + .fgztD_slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .fgztD_slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+  background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Rounded fgztD_sliders */
+.fgztD_slider.fgztD_round {
+  border-radius: 34px;
+}
+
+.fgztD_slider.fgztD_round:before {
+  border-radius: 50%;
+}
